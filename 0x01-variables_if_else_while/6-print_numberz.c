@@ -1,18 +1,20 @@
 #include <stdio.h>
 
 /**
- *  * main - Prints numbers between 0 to 9.
- *   *
- *    * Return: Always 0 (Success)
- */
+ *  * main - print from 0 to 9 using putchar
+ *  * Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-		int i;
+int num = '0';
 
-			for (i = 48; i < 58; i++)
-					{
-								putchar(i);
-									}
-				putchar('\n');
-					return (0);
+while (num <= '9')
+{
+putchar(num);
+num++;
+}
+putchar('\n');
+
+return (0);
 }
