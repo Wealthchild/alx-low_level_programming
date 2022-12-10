@@ -1,19 +1,26 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- *  * main - Prints the alphabet.
- *   *
- *    * Return: Always 0 (Success)
+ *  * main - returns alphabet in both loweer and upper case
+ *  * Return: returns 0 (successful)
  */
+
 int main(void)
 {
-		char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-			int i;
-
-				for (i = 0; i < 52; i++)
-						{
-									putchar(alp[i]);
-										}
-					putchar('\n');
-						return (0);
+int ch = 'a';
+int CH = 'A';
+while (ch <= 'z')
+{
+putchar(ch);
+ch++;
+}
+while (CH <= 'Z')
+{
+putchar(CH);
+CH++;
+}
+putchar('\n');
+return (0);
 }
